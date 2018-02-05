@@ -8,4 +8,6 @@
     <% end %>
 <p><%= link_to 'Editer mon profil', edit_user_path(@user) %></p>
 <%= link_to 'Delete this account', 'user/destroy'  %>
+<%= link_to "Logout", logout_path, method: :delete,
+                    class: "dropdown-link" %>
 </div>
